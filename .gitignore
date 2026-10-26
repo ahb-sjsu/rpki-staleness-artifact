@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+rerun/
+rov-cache/
+whatchanged-cache/
+code/paper/figs/

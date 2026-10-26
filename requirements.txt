@@ -1,0 +1,5 @@
+numpy
+matplotlib
+pytest
+jupyter
+pybgpkit==0.8.0

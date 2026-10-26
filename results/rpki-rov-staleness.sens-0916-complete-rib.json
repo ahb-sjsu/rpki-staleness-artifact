@@ -1,0 +1,114 @@
+{
+ "cell": "rpki-rov-staleness",
+ "t0": [
+  "2026-09-02",
+  "2026-09-09",
+  "2026-09-16",
+  "2026-09-23",
+  "2026-09-30",
+  "2026-10-07",
+  "2026-10-14",
+  "2026-10-21"
+ ],
+ "mc": {
+  "MC1": {
+   "ok": true,
+   "failures": []
+  },
+  "MC2": {
+   "ok": true,
+   "tail": ".................                                                        [100%]\n17 passed in 0.09s\n"
+  },
+  "MC3": {
+   "ok": true,
+   "t0": "2026-09-02",
+   "image": "nlnetlabs/routinator:v0.15.2",
+   "n": 1439978,
+   "vrps": 998281,
+   "per_ta": {
+    "afrinic": 30753,
+    "afrinic_last_modified": "Wed, 02 Sep 2026 04:03:21 GMT",
+    "apnic": 294623,
+    "apnic_last_modified": "Wed, 02 Sep 2026 04:09:49 GMT",
+    "arin": 267665,
+    "arin_last_modified": "Wed, 02 Sep 2026 04:19:15 GMT",
+    "lacnic": 44734,
+    "lacnic_last_modified": "Wed, 02 Sep 2026 04:26:34 GMT",
+    "ripencc": 360506,
+    "ripencc_last_modified": "Wed, 02 Sep 2026 04:32:46 GMT"
+   },
+   "ours": {
+    "not_found": 402792,
+    "valid": 1026726,
+    "invalid": 10460
+   },
+   "routinator": {
+    "not_found": 402792,
+    "valid": 1026726,
+    "invalid": 10460
+   },
+   "per_state_abs_diff_frac": {
+    "valid": 0.0,
+    "invalid": 0.0,
+    "not_found": 0.0
+   },
+   "max_abs_diff_frac": 0.0,
+   "routes_missing_from_routinator": 0,
+   "routes_disagreeing": 0,
+   "disagreement_examples": []
+  },
+  "MC4": {
+   "ok": true,
+   "failures": []
+  }
+ },
+ "bars": {
+  "B1": {
+   "means": {
+    "1": 4.643088060409033e-05,
+    "2": 0.00010297159839111575,
+    "4": 0.00012056247172806406,
+    "8": 0.0003553178867598659,
+    "15": 0.00045811527977489275,
+    "30": 0.0005906349971017181
+   },
+   "strictly_increasing": true,
+   "diff_30_minus_1": 0.0005442041164976277,
+   "se": 9.326720123057123e-05,
+   "pass": true
+  },
+  "B2": {
+   "means": {
+    "1": 0.00019619652348372635,
+    "2": 0.00035892985508892373,
+    "4": 0.00047566506844192585,
+    "8": 0.0014245948645751287,
+    "15": 0.0026748811397202766,
+    "30": 0.0052764113945857425
+   },
+   "strictly_increasing": true,
+   "diff_30_minus_1": 0.0050802148711020165,
+   "se": 0.00015935623681028076,
+   "pass": true
+  },
+  "B3": {
+   "ratio_point": 0.07861180057383915,
+   "ratio_upper95": 0.10512795502719177,
+   "bar": 0.1,
+   "pass": false
+  },
+  "B4": {
+   "means": {
+    "1h": 6.019041408493625e-07,
+    "6h": 1.0298225402204755e-05,
+    "1d": 4.289861720304706e-05
+   },
+   "non_decreasing": true,
+   "diff_1d_minus_1h": 4.22967130621977e-05,
+   "se": 8.170934269889945e-06,
+   "void": false,
+   "pass": true
+  }
+ },
+ "verdict": "FAIL"
+}

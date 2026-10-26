@@ -1,0 +1,108 @@
+{
+ "cell": "rpki-staleness-shakedown",
+ "t0": "2026-08-16",
+ "deltas_days": [
+  1,
+  2,
+  4,
+  8,
+  15,
+  30
+ ],
+ "tals": {
+  "ripencc.tal": {
+   "fresh_vrps": 357361,
+   "curve": {
+    "1": {
+     "stale_vrps": 357372,
+     "removed": 202,
+     "removed_frac": 0.000565,
+     "added": 191,
+     "added_frac": 0.000534
+    },
+    "2": {
+     "stale_vrps": 357098,
+     "removed": 462,
+     "removed_frac": 0.001294,
+     "added": 725,
+     "added_frac": 0.002029
+    },
+    "4": {
+     "stale_vrps": 356185,
+     "removed": 1027,
+     "removed_frac": 0.002883,
+     "added": 2203,
+     "added_frac": 0.006165
+    },
+    "8": {
+     "stale_vrps": 355518,
+     "removed": 1831,
+     "removed_frac": 0.00515,
+     "added": 3674,
+     "added_frac": 0.010281
+    },
+    "15": {
+     "stale_vrps": 354434,
+     "removed": 3408,
+     "removed_frac": 0.009615,
+     "added": 6335,
+     "added_frac": 0.017727
+    },
+    "30": {
+     "stale_vrps": 351053,
+     "removed": 5828,
+     "removed_frac": 0.016601,
+     "added": 12136,
+     "added_frac": 0.03396
+    }
+   }
+  },
+  "arin.tal": {
+   "fresh_vrps": 265308,
+   "curve": {
+    "1": {
+     "stale_vrps": 265290,
+     "removed": 24,
+     "removed_frac": 9e-05,
+     "added": 42,
+     "added_frac": 0.000158
+    },
+    "2": {
+     "stale_vrps": 265170,
+     "removed": 63,
+     "removed_frac": 0.000238,
+     "added": 201,
+     "added_frac": 0.000758
+    },
+    "4": {
+     "stale_vrps": 267475,
+     "removed": 2677,
+     "removed_frac": 0.010008,
+     "added": 510,
+     "added_frac": 0.001922
+    },
+    "8": {
+     "stale_vrps": 267108,
+     "removed": 2834,
+     "removed_frac": 0.01061,
+     "added": 1034,
+     "added_frac": 0.003897
+    },
+    "15": {
+     "stale_vrps": 264014,
+     "removed": 1234,
+     "removed_frac": 0.004674,
+     "added": 2528,
+     "added_frac": 0.009529
+    },
+    "30": {
+     "stale_vrps": 261654,
+     "removed": 2578,
+     "removed_frac": 0.009853,
+     "added": 6232,
+     "added_frac": 0.02349
+    }
+   }
+  }
+ }
+}

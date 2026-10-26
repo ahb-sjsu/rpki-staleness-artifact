@@ -1,0 +1,307 @@
+{
+ "cell": "rpki-staleness",
+ "t0": "2026-08-16",
+ "deltas_days": [
+  1,
+  2,
+  4,
+  8,
+  15,
+  30
+ ],
+ "tals": {
+  "ripencc.tal": {
+   "fresh_vrps": 357361,
+   "curve": {
+    "1": {
+     "stale_vrps": 357372,
+     "removed": 202,
+     "removed_frac": 0.000565,
+     "added": 191,
+     "added_frac": 0.000534
+    },
+    "2": {
+     "stale_vrps": 357098,
+     "removed": 462,
+     "removed_frac": 0.001294,
+     "added": 725,
+     "added_frac": 0.002029
+    },
+    "4": {
+     "stale_vrps": 356185,
+     "removed": 1027,
+     "removed_frac": 0.002883,
+     "added": 2203,
+     "added_frac": 0.006165
+    },
+    "8": {
+     "stale_vrps": 355518,
+     "removed": 1831,
+     "removed_frac": 0.00515,
+     "added": 3674,
+     "added_frac": 0.010281
+    },
+    "15": {
+     "stale_vrps": 354434,
+     "removed": 3408,
+     "removed_frac": 0.009615,
+     "added": 6335,
+     "added_frac": 0.017727
+    },
+    "30": {
+     "stale_vrps": 351053,
+     "removed": 5828,
+     "removed_frac": 0.016601,
+     "added": 12136,
+     "added_frac": 0.03396
+    }
+   }
+  },
+  "arin.tal": {
+   "fresh_vrps": 265308,
+   "curve": {
+    "1": {
+     "stale_vrps": 265290,
+     "removed": 24,
+     "removed_frac": 9e-05,
+     "added": 42,
+     "added_frac": 0.000158
+    },
+    "2": {
+     "stale_vrps": 265170,
+     "removed": 63,
+     "removed_frac": 0.000238,
+     "added": 201,
+     "added_frac": 0.000758
+    },
+    "4": {
+     "stale_vrps": 267475,
+     "removed": 2677,
+     "removed_frac": 0.010008,
+     "added": 510,
+     "added_frac": 0.001922
+    },
+    "8": {
+     "stale_vrps": 267108,
+     "removed": 2834,
+     "removed_frac": 0.01061,
+     "added": 1034,
+     "added_frac": 0.003897
+    },
+    "15": {
+     "stale_vrps": 264014,
+     "removed": 1234,
+     "removed_frac": 0.004674,
+     "added": 2528,
+     "added_frac": 0.009529
+    },
+    "30": {
+     "stale_vrps": 261654,
+     "removed": 2578,
+     "removed_frac": 0.009853,
+     "added": 6232,
+     "added_frac": 0.02349
+    }
+   }
+  },
+  "apnic.tal": {
+   "fresh_vrps": 292427,
+   "curve": {
+    "1": {
+     "stale_vrps": 292356,
+     "removed": 3,
+     "removed_frac": 1e-05,
+     "added": 74,
+     "added_frac": 0.000253
+    },
+    "2": {
+     "stale_vrps": 292258,
+     "removed": 57,
+     "removed_frac": 0.000195,
+     "added": 226,
+     "added_frac": 0.000773
+    },
+    "4": {
+     "stale_vrps": 292026,
+     "removed": 176,
+     "removed_frac": 0.000603,
+     "added": 577,
+     "added_frac": 0.001973
+    },
+    "8": {
+     "stale_vrps": 291725,
+     "removed": 237,
+     "removed_frac": 0.000812,
+     "added": 939,
+     "added_frac": 0.003211
+    },
+    "15": {
+     "stale_vrps": 290333,
+     "removed": 437,
+     "removed_frac": 0.001505,
+     "added": 2531,
+     "added_frac": 0.008655
+    },
+    "30": {
+     "stale_vrps": 290412,
+     "removed": 2474,
+     "removed_frac": 0.008519,
+     "added": 4489,
+     "added_frac": 0.015351
+    }
+   }
+  },
+  "lacnic.tal": {
+   "fresh_vrps": 44408,
+   "curve": {
+    "1": {
+     "stale_vrps": 44420,
+     "removed": 42,
+     "removed_frac": 0.000946,
+     "added": 30,
+     "added_frac": 0.000676
+    },
+    "2": {
+     "stale_vrps": 44262,
+     "removed": 210,
+     "removed_frac": 0.004744,
+     "added": 356,
+     "added_frac": 0.008017
+    },
+    "4": {
+     "stale_vrps": 44219,
+     "removed": 332,
+     "removed_frac": 0.007508,
+     "added": 521,
+     "added_frac": 0.011732
+    },
+    "8": {
+     "stale_vrps": 43941,
+     "removed": 579,
+     "removed_frac": 0.013177,
+     "added": 1046,
+     "added_frac": 0.023554
+    },
+    "15": {
+     "stale_vrps": 43805,
+     "removed": 930,
+     "removed_frac": 0.02123,
+     "added": 1533,
+     "added_frac": 0.034521
+    },
+    "30": {
+     "stale_vrps": 43577,
+     "removed": 1371,
+     "removed_frac": 0.031462,
+     "added": 2202,
+     "added_frac": 0.049586
+    }
+   }
+  },
+  "afrinic.tal": {
+   "fresh_vrps": 30108,
+   "curve": {
+    "1": {
+     "stale_vrps": 30018,
+     "removed": 11,
+     "removed_frac": 0.000366,
+     "added": 101,
+     "added_frac": 0.003355
+    },
+    "2": {
+     "stale_vrps": 30014,
+     "removed": 17,
+     "removed_frac": 0.000566,
+     "added": 111,
+     "added_frac": 0.003687
+    },
+    "4": {
+     "stale_vrps": 29990,
+     "removed": 47,
+     "removed_frac": 0.001567,
+     "added": 165,
+     "added_frac": 0.00548
+    },
+    "8": {
+     "stale_vrps": 30001,
+     "removed": 201,
+     "removed_frac": 0.0067,
+     "added": 308,
+     "added_frac": 0.01023
+    },
+    "15": {
+     "stale_vrps": 30014,
+     "removed": 396,
+     "removed_frac": 0.013194,
+     "added": 490,
+     "added_frac": 0.016275
+    },
+    "30": {
+     "stale_vrps": 29861,
+     "removed": 559,
+     "removed_frac": 0.01872,
+     "added": 806,
+     "added_frac": 0.02677
+    }
+   }
+  }
+ },
+ "unseen_union": {
+  "tals": [
+   "apnic.tal",
+   "lacnic.tal",
+   "afrinic.tal"
+  ],
+  "fresh_vrps": 366943,
+  "curve": {
+   "1": {
+    "stale_vrps": 366794,
+    "removed": 56,
+    "removed_frac": 0.000153,
+    "added": 205,
+    "added_frac": 0.000559
+   },
+   "2": {
+    "stale_vrps": 366534,
+    "removed": 284,
+    "removed_frac": 0.000775,
+    "added": 693,
+    "added_frac": 0.001889
+   },
+   "4": {
+    "stale_vrps": 366235,
+    "removed": 555,
+    "removed_frac": 0.001515,
+    "added": 1263,
+    "added_frac": 0.003442
+   },
+   "8": {
+    "stale_vrps": 365667,
+    "removed": 1017,
+    "removed_frac": 0.002781,
+    "added": 2293,
+    "added_frac": 0.006249
+   },
+   "15": {
+    "stale_vrps": 364152,
+    "removed": 1763,
+    "removed_frac": 0.004841,
+    "added": 4554,
+    "added_frac": 0.012411
+   },
+   "30": {
+    "stale_vrps": 363850,
+    "removed": 4404,
+    "removed_frac": 0.012104,
+    "added": 7497,
+    "added_frac": 0.020431
+   }
+  }
+ },
+ "verdict": {
+  "MC1": true,
+  "B1": true,
+  "B2": true,
+  "verdict": "PASS"
+ }
+}
