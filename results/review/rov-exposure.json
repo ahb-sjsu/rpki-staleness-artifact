@@ -1,0 +1,347 @@
+{
+ "exploratory": true,
+ "by_age_offset": {
+  "1d+1": {
+   "accepts": 540,
+   "still_announced": 458,
+   "still_invalid_now": 412,
+   "days": 8
+  },
+  "1d+7": {
+   "accepts": 446,
+   "still_announced": 249,
+   "still_invalid_now": 205,
+   "days": 7
+  },
+  "1d+30": {
+   "accepts": 179,
+   "still_announced": 59,
+   "still_invalid_now": 30,
+   "days": 4
+  },
+  "30d+1": {
+   "accepts": 6873,
+   "still_announced": 6666,
+   "still_invalid_now": 6556,
+   "days": 8
+  },
+  "30d+7": {
+   "accepts": 5254,
+   "still_announced": 4428,
+   "still_invalid_now": 4109,
+   "days": 7
+  },
+  "30d+30": {
+   "accepts": 2502,
+   "still_announced": 1921,
+   "still_invalid_now": 1639,
+   "days": 4
+  }
+ },
+ "per_day": [
+  {
+   "t0": "2026-09-02",
+   "offset": 1,
+   "age": "1",
+   "accepts": 66,
+   "still_announced": 47,
+   "still_invalid_now": 42
+  },
+  {
+   "t0": "2026-09-02",
+   "offset": 1,
+   "age": "30",
+   "accepts": 467,
+   "still_announced": 437,
+   "still_invalid_now": 431
+  },
+  {
+   "t0": "2026-09-02",
+   "offset": 30,
+   "age": "1",
+   "accepts": 66,
+   "still_announced": 30,
+   "still_invalid_now": 16
+  },
+  {
+   "t0": "2026-09-02",
+   "offset": 30,
+   "age": "30",
+   "accepts": 467,
+   "still_announced": 306,
+   "still_invalid_now": 219
+  },
+  {
+   "t0": "2026-09-02",
+   "offset": 7,
+   "age": "1",
+   "accepts": 66,
+   "still_announced": 38,
+   "still_invalid_now": 24
+  },
+  {
+   "t0": "2026-09-02",
+   "offset": 7,
+   "age": "30",
+   "accepts": 467,
+   "still_announced": 396,
+   "still_invalid_now": 375
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 1,
+   "age": "1",
+   "accepts": 51,
+   "still_announced": 33,
+   "still_invalid_now": 28
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 1,
+   "age": "30",
+   "accepts": 444,
+   "still_announced": 397,
+   "still_invalid_now": 381
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 30,
+   "age": "1",
+   "accepts": 51,
+   "still_announced": 18,
+   "still_invalid_now": 12
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 30,
+   "age": "30",
+   "accepts": 444,
+   "still_announced": 276,
+   "still_invalid_now": 214
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 7,
+   "age": "1",
+   "accepts": 51,
+   "still_announced": 23,
+   "still_invalid_now": 18
+  },
+  {
+   "t0": "2026-09-09",
+   "offset": 7,
+   "age": "30",
+   "accepts": 444,
+   "still_announced": 336,
+   "still_invalid_now": 309
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 1,
+   "age": "1",
+   "accepts": 32,
+   "still_announced": 18,
+   "still_invalid_now": 16
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 1,
+   "age": "30",
+   "accepts": 766,
+   "still_announced": 745,
+   "still_invalid_now": 732
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 30,
+   "age": "1",
+   "accepts": 32,
+   "still_announced": 9,
+   "still_invalid_now": 2
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 30,
+   "age": "30",
+   "accepts": 766,
+   "still_announced": 637,
+   "still_invalid_now": 594
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 7,
+   "age": "1",
+   "accepts": 32,
+   "still_announced": 7,
+   "still_invalid_now": 6
+  },
+  {
+   "t0": "2026-09-16",
+   "offset": 7,
+   "age": "30",
+   "accepts": 766,
+   "still_announced": 689,
+   "still_invalid_now": 676
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 1,
+   "age": "1",
+   "accepts": 30,
+   "still_announced": 19,
+   "still_invalid_now": 18
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 1,
+   "age": "30",
+   "accepts": 825,
+   "still_announced": 809,
+   "still_invalid_now": 803
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 30,
+   "age": "1",
+   "accepts": 30,
+   "still_announced": 2,
+   "still_invalid_now": 0
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 30,
+   "age": "30",
+   "accepts": 825,
+   "still_announced": 702,
+   "still_invalid_now": 612
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 7,
+   "age": "1",
+   "accepts": 30,
+   "still_announced": 8,
+   "still_invalid_now": 8
+  },
+  {
+   "t0": "2026-09-23",
+   "offset": 7,
+   "age": "30",
+   "accepts": 825,
+   "still_announced": 770,
+   "still_invalid_now": 753
+  },
+  {
+   "t0": "2026-09-30",
+   "offset": 1,
+   "age": "1",
+   "accepts": 120,
+   "still_announced": 119,
+   "still_invalid_now": 114
+  },
+  {
+   "t0": "2026-09-30",
+   "offset": 1,
+   "age": "30",
+   "accepts": 1214,
+   "still_announced": 1210,
+   "still_invalid_now": 1197
+  },
+  {
+   "t0": "2026-09-30",
+   "offset": 7,
+   "age": "1",
+   "accepts": 120,
+   "still_announced": 50,
+   "still_invalid_now": 44
+  },
+  {
+   "t0": "2026-09-30",
+   "offset": 7,
+   "age": "30",
+   "accepts": 1214,
+   "still_announced": 829,
+   "still_invalid_now": 766
+  },
+  {
+   "t0": "2026-10-07",
+   "offset": 1,
+   "age": "1",
+   "accepts": 44,
+   "still_announced": 27,
+   "still_invalid_now": 16
+  },
+  {
+   "t0": "2026-10-07",
+   "offset": 1,
+   "age": "30",
+   "accepts": 954,
+   "still_announced": 892,
+   "still_invalid_now": 861
+  },
+  {
+   "t0": "2026-10-07",
+   "offset": 7,
+   "age": "1",
+   "accepts": 44,
+   "still_announced": 22,
+   "still_invalid_now": 13
+  },
+  {
+   "t0": "2026-10-07",
+   "offset": 7,
+   "age": "30",
+   "accepts": 954,
+   "still_announced": 856,
+   "still_invalid_now": 755
+  },
+  {
+   "t0": "2026-10-14",
+   "offset": 1,
+   "age": "1",
+   "accepts": 103,
+   "still_announced": 102,
+   "still_invalid_now": 92
+  },
+  {
+   "t0": "2026-10-14",
+   "offset": 1,
+   "age": "30",
+   "accepts": 584,
+   "still_announced": 567,
+   "still_invalid_now": 552
+  },
+  {
+   "t0": "2026-10-14",
+   "offset": 7,
+   "age": "1",
+   "accepts": 103,
+   "still_announced": 101,
+   "still_invalid_now": 92
+  },
+  {
+   "t0": "2026-10-14",
+   "offset": 7,
+   "age": "30",
+   "accepts": 584,
+   "still_announced": 552,
+   "still_invalid_now": 475
+  },
+  {
+   "t0": "2026-10-21",
+   "offset": 1,
+   "age": "1",
+   "accepts": 94,
+   "still_announced": 93,
+   "still_invalid_now": 86
+  },
+  {
+   "t0": "2026-10-21",
+   "offset": 1,
+   "age": "30",
+   "accepts": 1619,
+   "still_announced": 1609,
+   "still_invalid_now": 1599
+  }
+ ]
+}

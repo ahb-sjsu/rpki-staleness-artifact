@@ -1,0 +1,122 @@
+{
+ "t0": "2026-09-23",
+ "n": 1448364,
+ "n_matches_record": true,
+ "rib": {
+  "rrc00": {
+   "bytes": 420585029,
+   "attempts": 1,
+   "rib_elems": 54620042
+  },
+  "rrc01": {
+   "bytes": 356133385,
+   "attempts": 1,
+   "rib_elems": 42956674
+  },
+  "rrc03": {
+   "bytes": 337308413,
+   "attempts": 1,
+   "rib_elems": 39412062
+  }
+ },
+ "exploratory": true,
+ "as0_valid_overlap_daily_current": 2701,
+ "bridge_confusion_daily_by_snapshot": {
+  "valid|valid": 1041012,
+  "valid|invalid": 23,
+  "valid|not_found": 85,
+  "invalid|valid": 13,
+  "invalid|invalid": 10901,
+  "invalid|not_found": 0,
+  "not_found|valid": 73,
+  "not_found|invalid": 0,
+  "not_found|not_found": 396257
+ },
+ "bridge_disagree": 194,
+ "subday": {
+  "1h": {
+   "accept": 0,
+   "drop": 6,
+   "accept_on_disagreeing_routes": 0,
+   "drop_on_disagreeing_routes": 0,
+   "check_matches_record": true
+  },
+  "6h": {
+   "accept": 7,
+   "drop": 17,
+   "accept_on_disagreeing_routes": 0,
+   "drop_on_disagreeing_routes": 0,
+   "check_matches_record": true
+  },
+  "1d": {
+   "accept": 20,
+   "drop": 214,
+   "accept_on_disagreeing_routes": 0,
+   "drop_on_disagreeing_routes": 0,
+   "check_matches_record": true
+  }
+ },
+ "daily": {
+  "1": {
+   "accept": 30,
+   "drop": 218,
+   "accept_on_disagreeing_routes": 11,
+   "drop_on_disagreeing_routes": 23,
+   "drop_cover": {
+    "drops": 218,
+    "with_usable_cover": 142,
+    "cover_same_origin": 109,
+    "min_cover": {
+     "4": 8,
+     "6": 16
+    },
+    "cover_length": {
+     "v4/20": 28,
+     "v4/12": 25,
+     "v4/22": 16,
+     "v6/32": 14,
+     "v4/13": 9,
+     "v4/19": 7,
+     "v4/15": 7,
+     "v4/17": 6,
+     "v4/18": 6,
+     "v4/16": 5,
+     "v6/40": 5,
+     "v4/21": 4
+    }
+   },
+   "check_matches_record": true
+  },
+  "30": {
+   "accept": 825,
+   "drop": 7821,
+   "accept_on_disagreeing_routes": 13,
+   "drop_on_disagreeing_routes": 19,
+   "drop_cover": {
+    "drops": 7821,
+    "with_usable_cover": 2584,
+    "cover_same_origin": 1294,
+    "min_cover": {
+     "4": 8,
+     "6": 16
+    },
+    "cover_length": {
+     "v4/17": 341,
+     "v6/32": 265,
+     "v4/16": 261,
+     "v4/15": 231,
+     "v4/18": 177,
+     "v4/22": 174,
+     "v4/19": 167,
+     "v4/20": 163,
+     "v4/10": 140,
+     "v4/23": 128,
+     "v4/21": 115,
+     "v6/40": 76
+    }
+   },
+   "check_matches_record": true
+  }
+ },
+ "elapsed_s": 2491.7
+}

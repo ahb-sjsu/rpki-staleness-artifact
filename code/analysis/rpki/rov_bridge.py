@@ -10,7 +10,8 @@ For one reference day, from complete local copies of the RIB dumps:
    are among the routes on which the two current lists disagree;
 2. AS0 overlap: routes that are Valid although an AS0 VRP also covers
    them (RFC 6483 precedence), so the inputs exercise that case;
-3. covering routes for wrong drops: for each route a stale list wrongly
+3. covering routes for wrong drops (v2: covers shorter than /8 or /16
+   are ignored; v1 counted default routes): for each route a stale list wrongly
    drops, whether a less specific announced prefix covers it that the
    same stale list does not find Invalid, i.e. a route that could still
    carry the traffic.
@@ -59,27 +60,37 @@ def _as0_overlap(rows, idx: VrpIndex, st) -> int:
     return n
 
 
+MIN_COVER = {4: 8, 6: 16}   # a default route or a /1 is not an aggregate (v1 counted them)
+
+
 def _covered(rows, stale_st, drops: set) -> dict:
-    """For each wrongly dropped route, is there a strictly less specific
-    announced prefix that the stale list does not find Invalid?"""
-    usable = defaultdict(set)                     # (fam, len) -> network ints
+    """For each wrongly dropped route, the most specific strictly less
+    specific announced prefix, no shorter than MIN_COVER, that the stale
+    list does not find Invalid; whether its origin is the dropped route's
+    own; and its length."""
+    usable = defaultdict(lambda: defaultdict(set))   # (fam, len) -> addr -> origins
     for (p, fam, plen, addr, o, _), s in zip(rows, stale_st):
-        if s != INVALID:
-            usable[(fam, plen)].add(addr)
-    lengths = {f: sorted({ln for (ff, ln) in usable if ff == f}) for f in (4, 6)}
-    hit = 0
+        if s != INVALID and plen >= MIN_COVER[fam]:
+            usable[(fam, plen)][addr].add(o)
+    lengths = {f: sorted({ln for (ff, ln) in usable if ff == f}, reverse=True) for f in (4, 6)}
+    hit = same = 0
+    by_len: Counter = Counter()
     for p, fam, plen, addr, o, _ in rows:
         if (p, o) not in drops:
             continue
         width = 32 if fam == 4 else 128
         for ln in lengths[fam]:
             if ln >= plen:
-                break
-            mask = ((1 << ln) - 1) << (width - ln) if ln else 0
-            if (addr & mask) in usable[(fam, ln)]:
+                continue
+            mask = ((1 << ln) - 1) << (width - ln)
+            origins = usable[(fam, ln)].get(addr & mask)
+            if origins:
                 hit += 1
+                same += o in origins
+                by_len[f"v{fam}/{ln}"] += 1
                 break
-    return {"drops": len(drops), "with_usable_cover": hit}
+    return {"drops": len(drops), "with_usable_cover": hit, "cover_same_origin": same,
+            "min_cover": MIN_COVER, "cover_length": dict(by_len.most_common(12))}
 
 
 def main() -> int:
